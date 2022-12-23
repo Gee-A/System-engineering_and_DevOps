@@ -1,0 +1,3 @@
+#!/bin/bash
+# copies all HTML files from . to .., but only copy files that do not exist or newer in ..
+cp -u *.html ..

@@ -1,0 +1,3 @@
+#!/bin/bash
+# creates a nested directory 'welcome/to/school' in one code line in the current working directory
+mkdir -p welcome/to/school
