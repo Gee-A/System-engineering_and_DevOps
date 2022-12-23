@@ -1,0 +1,3 @@
+#!/bin/bash
+# list all files and directories
+ls -am --indicator-style=slash
