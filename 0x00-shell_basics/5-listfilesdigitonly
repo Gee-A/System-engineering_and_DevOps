@@ -1,0 +1,3 @@
+#!/bin/bash
+# display current directory content in long format (including hidden files) with user and group ID's displayed numerically
+ls -lan

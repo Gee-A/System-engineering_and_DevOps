@@ -1,0 +1,3 @@
+#!/bin/bash
+# prints the type of file named iamfile (which is assumed to be in /tmp)
+file /tmp/iamfile

@@ -1,0 +1,3 @@
+#!/bin/bash
+# delete the file betty in /tmp/my_first_directory
+rm /tmp/my_first_directory/betty

@@ -1,0 +1,3 @@
+#!/bin/bash
+# lists all files (including hidden files, apart ., ..) and the /boot directory in long format
+ls -Al; ls -l /boot
