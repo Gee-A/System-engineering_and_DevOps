@@ -1,0 +1,3 @@
+#!/bin/bash
+# plays the StarWars IV episode in the terminal
+telnet towel.blinkenlights.nl

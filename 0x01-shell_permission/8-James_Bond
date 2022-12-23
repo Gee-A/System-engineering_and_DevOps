@@ -1,0 +1,3 @@
+#!/bin/bash
+# set permission to file hello as no permission at all to owner and group, all permission to other users
+chmod 007 hello

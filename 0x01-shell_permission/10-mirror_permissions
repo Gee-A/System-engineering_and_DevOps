@@ -1,0 +1,3 @@
+#!/bin/bash
+# sets the mode of file hello the same as olleh's mode
+chmod --reference=hello olleh
