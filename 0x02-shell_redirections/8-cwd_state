@@ -1,0 +1,3 @@
+#!/bin/bash
+# writes into the ls_cwd_content the result of the command ls -la (ls_cwd_content should always be overwritten) if it does not exit create it
+ls -la > ls_cwd_content
