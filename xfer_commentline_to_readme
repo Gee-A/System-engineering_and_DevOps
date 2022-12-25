@@ -1,0 +1,4 @@
+#!/bin/bash
+for arg; do
+	/bin/awk "NR==2" "$arg" >> ./README.md
+done
