@@ -1,0 +1,3 @@
+#!/bin/bash
+# decodes acrostics that use the first letter of each line
+cut -c 1 | paste -sd ''

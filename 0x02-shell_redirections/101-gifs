@@ -1,0 +1,3 @@
+#!/bin/bash
+# lists all files with a .gif extension in the current directory and its sub-directories (Hidden files should be listed, numerically sorted, files should be without extension, one file name per line)
+find -type f -name "*.gif" -printf "%f\n" | sort -n | rev | cut -d '.' -f2- | rev

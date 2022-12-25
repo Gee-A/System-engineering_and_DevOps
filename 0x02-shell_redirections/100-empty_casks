@@ -1,0 +1,3 @@
+#!/bin/bash
+# finds all empty files and directories in the current directory and all sub-directories (Only the names of the files and directories should be displayed, Hidden files should be listed, one file name per line ending with a newline)
+find . -empty -printf "%f\n"
