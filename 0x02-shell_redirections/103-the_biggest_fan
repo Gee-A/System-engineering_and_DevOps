@@ -1,0 +1,3 @@
+#!/bin/bash
+# parses web servers logs in TSV format (file provided) as input and display the 11 hosts or IP addresses which did the most requests (order by most request)
+tail -n +2 |cut -f1 | sort | uniq -c | sort -gr | head -11 | tr -s " " | cut -d" " -f3
