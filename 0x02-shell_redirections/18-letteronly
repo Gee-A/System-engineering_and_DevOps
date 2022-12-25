@@ -1,0 +1,3 @@
+#!/bin/bash
+# display all lines of the file '/etc/ssh/sshd_config' starting with a letter
+cat /etc/ssh/sshd_config | grep -E '^[a-zA-Z]'
