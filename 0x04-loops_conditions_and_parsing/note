@@ -1,0 +1,80 @@
+for loop syntax:  
+**for NAME [[ in LIST ]]; do COMMANDS; done**  
+
+if [[ in LIST ]] is not present, it is replaced with $@ and for for executes the **COMMANDS** once for each positional parameter that is set.  
+The return status is the exit status of the last command that executes.
+
+
+var=27 #assignment operator (works for both arithmetic and string assignment) - No spaces allowed
+
+if [[ "$String1" = "$string2" ]]	#test operator - space neccesary
+if [[ "X$String1" = "X$String2" ]]	# to prevent error message should one of the variable be empty (the prepended "X" cancel out)
+
+
+operators
++  - plus
+-  - minux
+*  - multiplication
+/  - division
+** - exponentiation
+%  - modulo
+(+= ; -= ; *= ; /= ; %= )
+
+bitwise
+<< - left shift (multiplies by 2 for each shift position)
+>> - right shift (divides by 2 for each shift position)
+&  - AND
+|  - OR
+~  - NOT
+^  - XOR
+(<<= ; >>= ; &= ; |= ; ^= )
+
+logical (boolean)
+!       - NOT
+&&, -a  - AND
+||, -o  - OR
+
+Other Comparison Operators
+integer comparison within if [[ "$a" -eq "$b" ]]
+-eq - is equal to
+-ne - not equal to
+-gt - is greater than
+-ge - is greater than or equal to
+-lt - is less than
+-le - is less than or equal to
+
+integer comparison within (( "$a" < "$b" ))
+<  - is less than
+<= - is less than or equal to
+>  - is greater than
+>= - is greater than or equal to
+
+string comparison
+=,==  - is equal to ; = literal matching ; [[ $a == z* ]] # True if $a start with an "z" (pattern matching)
+!= - is not equal to
+<  - less than in ASCII alphabetical order
+>  - greater than in ASCII alphabetical order
+-z - string is null, has zero length
+-n - string is not null (requires that string be quoted)
+
+
+files test operators
+-e - file exists
+-s - file is zero size
+
+-f - file is a regular file (not a directory of device file)
+-d - file is a directory
+-h - file is a symbolic link
+-b - file is a block device
+-c - file is a character device
+-p - file is a pipe
+-t - file (descriptor) is associated with a terminal device
+
+-r - file has read permission (for the user running the test)
+-w - file has write permission (for the user running the test)
+-x - file has execute permission (for the user running the test)
+
+f1 -nt f2  - true if file f1 is newer than f2
+f2 -ot f2  - true if file f1 is older than f2
+f1 -et f2  - true if file f1 and f2 are hard links to the same file
+!          - reverse the sense of the above (returns true if condition is absent)
