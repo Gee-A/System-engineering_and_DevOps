@@ -41,3 +41,9 @@ The system needs to be restarted before system-wide aliases can take effect.
 [8-true_knowledge](./8-true_knowledge) | prints the result of the addition of '128' with the value stored in the environment variable 'TRUEKNOWLEDGE', followed by a newline
 [9-divide_and_rule](./9-divide_and_rule) | prints the result of 'POWER' divided by 'DIVIDE', followed by a new line
 [10-love_exponent_breath](./10-love_exponent_breath) | displays the result of 'BREATH' to the power of 'LOVE'
+[11-binary_to_decimal](./11-binary_to_decimal) | converts a number from base 2 to base 10 (The number in base 2 is stored in the environment variable BINARY)
+[12-combinations](./12-combinations) | prints all possible combination of two letters from {a-z}{a-z}, except oo
+[13-print_float](./13-print_float) | prints a number with two decimal places, followed by a new line (number is stored in the environment variable NUM
+[100-decimal_to_hexadecimal](./100-decimal_to_hexadecimal) | converts a number from base 10 to base 16 (number in base 10 is stored in the environment variable DECIMAL)
+[101-rot13](./101-rot13) | encodes and decodes text using rot13 encryption
+[102-odd](./102-odd) | prints every odd line starting with the first
