@@ -47,3 +47,4 @@ The system needs to be restarted before system-wide aliases can take effect.
 [100-decimal_to_hexadecimal](./100-decimal_to_hexadecimal) | converts a number from base 10 to base 16 (number in base 10 is stored in the environment variable DECIMAL)
 [101-rot13](./101-rot13) | encodes and decodes text using rot13 encryption
 [102-odd](./102-odd) | prints every odd line starting with the first
+[103-water_and_stir](./103-water_and_stir) | adds two numbers stored in varaible 'WATER' and 'STIR' and prints the result (where 'WATER' is in base water, 'STIR' in base stir., the result in base bestchol)
