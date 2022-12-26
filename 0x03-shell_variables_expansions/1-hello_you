@@ -1,0 +1,3 @@
+#!/bin/bash
+# print hello user, where user is the current Linux user
+echo "hello $USER"

