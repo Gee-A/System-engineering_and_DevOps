@@ -1,0 +1,3 @@
+#!/bin/bash
+# converts a number from base 10 to base 16 (number in base 10 is stored in the environment variable DECIMAL)
+printf '%x\n' $DECIMAL

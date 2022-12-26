@@ -1,0 +1,3 @@
+#!/bin/bash
+# prints a number with two decimal places, followed by a new line (number is stored in the environment variable NUM
+printf "%.2f\n" $NUM

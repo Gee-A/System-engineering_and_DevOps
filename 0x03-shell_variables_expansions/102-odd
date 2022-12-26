@@ -1,0 +1,3 @@
+#!/bin/bash
+# prints every odd line starting with the first
+paste - - | cut -f 1

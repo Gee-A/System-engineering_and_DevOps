@@ -1,0 +1,3 @@
+#!/bin/bash
+# encodes and decodes text using rot13 encryption
+tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
