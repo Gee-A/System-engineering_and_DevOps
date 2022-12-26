@@ -26,3 +26,18 @@ to remove entries from the current user's list of aliases:<br />
 The main disadvantage with the alias command is that any alias set up with it remains in effect only during the current login session.<br />
 Fortunately, howvever, any alias can be made more enduring (ie, until it is explicitly removed) by writing it to the appropriate configuration file (eg, to the .bashrc file in the user's home directory, and in /root/bashrc for the root user) which can vary according to system [(check here)](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html).<br />
 The system needs to be restarted before system-wide aliases can take effect.
+
+
+| File | Description |
+|------|-------------|
+[0-alias](./0-alias) | an alias with the name 'ls' and target 'rm \*'
+[1-hello_you](./1-hello_you) | print hello user, where user is the current Linux user
+[2-path](./2-path) | add '/action' to the 'PATH'. '/action' should be the last directory the shell looks into when looking for a program.
+[3-paths](./3-paths) | counts the number of directories in the 'PATH'
+[4-global_variables](./4-global_variables) | list all the environment variables
+[5-local_variables](./5-local_variables) | lists all local variables and environment variables, and functions
+[6-create_local_variable](./6-create_local_variable) | creates a new local variable
+[7-create_global_variable](./7-create_global_variable) | create a new global variable
+[8-true_knowledge](./8-true_knowledge) | prints the result of the addition of '128' with the value stored in the environment variable 'TRUEKNOWLEDGE', followed by a newline
+[9-divide_and_rule](./9-divide_and_rule) | prints the result of 'POWER' divided by 'DIVIDE', followed by a new line
+[10-love_exponent_breath](./10-love_exponent_breath) | displays the result of 'BREATH' to the power of 'LOVE'
