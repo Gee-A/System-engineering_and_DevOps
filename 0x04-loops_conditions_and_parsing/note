@@ -1,9 +1,24 @@
 for loop syntax:  
-**for NAME [[ in LIST ]]; do COMMANDS; done**  
+**for NAME [in LIST]; do COMMANDS; done**  
 
-if [[ in LIST ]] is not present, it is replaced with $@ and for for executes the **COMMANDS** once for each positional parameter that is set.  
+if `in LIST` is not present, it is replaced with $@ and for for executes the **COMMANDS** once for each positional parameter that is set.  
 The return status is the exit status of the last command that executes.
 
+while loop example:
+**while read data; do echo "${data}" done < infile.txt**
+
+here while loop will only keep iterating while there are lines (stored in data) to be read from the given input file (infile.txt). The read command will process the file line by line, into the data variable.
+
+until loop syntax:
+**until [[ condition ]]; do COMMANDS; done**
+
+for loops are used where we know exactly how many iterations we need (i.e. they have a definitive start and end point).
+while loops are used when we don't know the limitation on tasks such as read in a file or asking a user for input.
+until loops are designed to run while the condition returns false and only terminate when codition return true.
+
+
+if syntax:
+if [[ condition ]]; then COMMANDS; [elif [[ condition ]]; then COMMANDS;[..]] [else COMMANDS;] fi
 
 var=27 #assignment operator (works for both arithmetic and string assignment) - No spaces allowed
 
@@ -60,7 +75,7 @@ string comparison
 
 files test operators
 -e - file exists
--s - file is zero size
+-s - file is not zero size
 
 -f - file is a regular file (not a directory of device file)
 -d - file is a directory
