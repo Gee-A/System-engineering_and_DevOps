@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# displays a list of currently running processes (show all processes, for all users, which might not have a TTY)
+ps faux
