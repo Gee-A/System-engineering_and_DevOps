@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# indefinitely writes 'I am alive!' to '/tmp/my_process' with an interval of 2 sleep seconds
+FILE="/tmp/my_process"
+
+if [[ -e "$FILE" ]]; then
+	rm "$FILE"
+fi
+while true; do
+	echo "I am alive!" >> "$FILE"
+	sleep 2
+done;

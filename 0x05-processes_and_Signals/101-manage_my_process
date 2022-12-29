@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# manages 'manage_my_process'
+#+ when argument is 'start' Starts manage_my_process, creates a file containing its PID in '/var/run/my_process.pid', then display 'manage_my_process started
+#+ when argument is 'stop' Stops manage_my_process, deletes '/var/run/my_process.pid', then display 'manage_my_process stopped
+#+ when argument is 'restart' Stops manage_my_process, delete '/var/run/my_process.pid', start manage_my_process, create '/var/run/my_process.pid', display manage_my_process restarted
+# if any other argument or no argument is passed display: 'Usage: manage_my_process {start|stop|restart}
+
+FILE="/var/run/my_process.pid"
+
+if [[ $* == "start" ]]; then
+	./manage_my_process &
+	echo "$!" > "$FILE"
+	echo "manage_my_process started"
+elif [[ $* == "stop" ]]; then
+	kill $(cat "$FILE")
+	rm "$FILE"
+	echo "manage_my_process stopped"
+elif [[ $* == "restart" ]]; then
+	kill $(cat "$FILE")
+	rm "$FILE"
+	./manage_my_process &
+	echo "$!" > "$FILE"
+	echo "manage_my_process restarted"
+else
+	echo "Usage: manage_my_process {start|stop|restart}"
+fi
