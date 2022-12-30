@@ -26,3 +26,12 @@ while it is a very powerful tool, it is also very dangerous because of its compl
 ## Tasks
 | File | Description |
 |------|-------------|
+[0-simply_match_school.rb](./0-simply_match_school.rb) | regex to match 'School'
+[1-repetition_token_0.rb](./1-repetition_token_0.rb) | regex that match repetition token
+[2-repetition_token_1.rb](./2-repetition_token_1.rb) | regex that matches repetition token
+[3-repetition_token_2.rb](./3-repetition_token_2.rb) | regex that matches repetition token
+[4-repetition_token_3.rb](./4-repetition_token_3.rb) | regex that matches repetition token
+[5-beginning_and_end.rb](./5-beginning_and_end.rb) | regex that exactly matches a string that starts with 'h' and ends with 'n' and can have any single character in between
+[6-phone_number.rb](./6-phone_number.rb) | regex that match a 10 digit phone number (e.g., '4155049898')
+[7-OMG_WHY_ARE_YOU_SHOUTING.rb](./7-OMG_WHY_ARE_YOU_SHOUTING.rb) | regex matches only capital letters
+[100-textme.rb](./100-textme.rb) | regex operation on file 'text_messages.log' (script output: [SENDER],[RECEIVER],[FLAGS])
