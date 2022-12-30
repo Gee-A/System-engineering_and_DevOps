@@ -12,11 +12,11 @@ if [[ $* == "start" ]]; then
 	echo "$!" > "$FILE"
 	echo "manage_my_process started"
 elif [[ $* == "stop" ]]; then
-	kill $(cat "$FILE")
+	kill "$(cat "$FILE")"
 	rm "$FILE"
 	echo "manage_my_process stopped"
 elif [[ $* == "restart" ]]; then
-	kill $(cat "$FILE")
+	kill "$(cat "$FILE")"
 	rm "$FILE"
 	./manage_my_process &
 	echo "$!" > "$FILE"
