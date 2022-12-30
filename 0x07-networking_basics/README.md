@@ -2,8 +2,9 @@
 ``DevOps`` ``Network``
 
 **Resource**  
-[MAC address](https://whatismyipaddress.com/mac-address)
-[IP address](https://www.bleepingcomputer.com/tutorials/ip-addresses-explained/)
+[MAC address](https://whatismyipaddress.com/mac-address)  
+[IP address](https://www.bleepingcomputer.com/tutorials/ip-addresses-explained/)  
+[TCP and UDP](https://www.howtogeek.com/190014/htg-explains-what-is-the-difference-between-tcp-and-udp/)
 
 
 **Note**  
@@ -71,6 +72,12 @@ It is a network of networks that consists of private, public, academic, business
 **IP addresses**
 IP addresses are used by the Internet infrastructure to direct internet packets to thier destinations. They consist of fixed-length numbers, which are found within the packets. IP addresses are generally assigned to equipment either automatically via DHCP, or are configured. However, the network also supports other addressing systems. Users generally enter domain names instead of IP addresses, they are converted by the Domain Name System (DNS) into IP addresses which are more efficient for routing purposes.  
 Two versions of Internet Protocol exist, IPv4 and IPv6 whose difference is mainly due to number of assignable IP's possible.
+
+
+**Localhost**
+localhost is a hostname that refers to the current device used to access it. It is used to access the network services that are running on the host via the loopback network interface.  
+The name localhost normally resolves to the IPv4 loopback address *127.0.0.1* and to the IPv6 loopback address ::1.  
+the processing of any packet sent to a loopback address is implemented in the **link layer** of the TCP/IP stack. Such packets are never passed to any network interface controller (NIC) or hardware device driver and must not appear outside of a computing system or be routed by any router. This permits software testing and local services in the absence of any hardware network interface.
 
 ## Tasks
 | Task | File | Descriptions |
