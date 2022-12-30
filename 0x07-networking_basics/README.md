@@ -34,6 +34,34 @@ The Presentation Layer handles protocol conversion, data encryption, data decryp
 
 Each layer in the OSI model has it own well-defined functions, and the functions of each layer communicate and interact with the layers immediately above and/or below it.
 
+
+**Computer network types**
+**LAN network**
+> A local area network (LAN) is a computer network that interconnects computers within a limited area such as residence, laboratory, university campus or office building.  
+Ethernet and Wi-Fi are the two most common technologies in use for local area networks.  
+At the physical and data link layer, a wide variety of LAN topologies have been used, including ring, bus, mesh and star.
+
+**WAN network**
+> A wide area network (WAN) is a telecommunications network that extends over a large geographic area. Wide area networks are often established with leased telecommunication circuits (a private telecommunications circuit between two or more location provided according to a commercial contract).  
+A network device called router connects LANs to a WAN. In IP networking, the router maintains both a LAN address and a WAN address.  
+Many technologies are available for wide area network links. Examples include circuit-switched telephone lines, radio wave transmission, and optical fiber.
+
+Residences typically employ one LAN and connect to the internet WAN through an internet service provider (ISP) using a broadband modem. The ISP provides a WAN IP address to the modem, and all the computers on the home network use LAN IP addresses (also called private IP address).  
+All computers on a home LAN can communicate directly with each other but must go through a central [network gateway](https://www.lifewire.com/definition-of-gateway-817891) typically a broadband router, to reach the ISP and beyond.
+
+Other types include:
+* Wireless Local Area Network (WLAN)
+* Metropolitan Area Network
+* Campus Area Network
+* Personal Area Network (PAN); A wireless PAN (WPAN) might be created between Bluetooth devices
+* Storage Area Network
+* System Area Network
+* Passive Optical Local Area Network (POLAN)
+* Virtual Private Networks (VPNs)
+
+
+**Internet**
+> Internet is largest WAN, spanning the Earth.
 ## Tasks
 | File | Descriptions |
 |------|--------------|
