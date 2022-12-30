@@ -8,6 +8,7 @@
 **Resource**  
 [Process management in linux](https://www.digitalocean.com/community/tutorials/process-management-in-linux)  
 [Get to Know Linux: The /etc/init.d Directory](https://www.ghacks.net/2009/04/04/get-to-know-linux-the-etcinitd-directory/)  
+[Handling Positional Parameters](https://wiki.bash-hackers.org/scripting/posparams)
 
 **Note**  
 A PID (process identification number) is an identification number that is uniquely and automatically assigned to each process when it is created on a Unix-like OS  
