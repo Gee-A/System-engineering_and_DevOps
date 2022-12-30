@@ -44,3 +44,5 @@ The two type of signals:
 [7-highlander](./7-highlander) | displays 'To infinity and beyond' indefinitely with a sleep 2 between each iteration (I am invincible!!! when receiving a SIGTERM signal)
 [8-beheaded_process](./8-beheaded_process) | kills the '7-highlander' process (not using kill and killall)
 [100-process_and_pid_file](./100-process_and_pid_file) | script creates the file /var/run/myscript.pid containing its PID, then display 'To infinity and beyond' indefinitely, 'I hate the kill command' when it receives a SIGTERM, 'Y U no love me?!' when it recieves a SIGINT and delete the file created, then quit when it receives SIGQUIT|SIGTERM
+[101-manage_my_process](./101-manage_my_process) | manages 'manage_my_process'
+[manage_my_process](./manage_my_process) | indefinitely writes 'I am alive!' to '/tmp/my_process' with an interval of 2 sleep seconds
