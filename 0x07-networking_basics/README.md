@@ -35,7 +35,7 @@ The Presentation Layer handles protocol conversion, data encryption, data decryp
 Each layer in the OSI model has it own well-defined functions, and the functions of each layer communicate and interact with the layers immediately above and/or below it.
 
 
-**Computer network types**
+**Computer network types**  
 **LAN network**
 > A local area network (LAN) is a computer network that interconnects computers within a limited area such as residence, laboratory, university campus or office building.  
 Ethernet and Wi-Fi are the two most common technologies in use for local area networks.  
@@ -61,7 +61,15 @@ Other types include:
 
 
 **Internet**
-> Internet is largest WAN, spanning the Earth.
+> Internet is largest WAN, spanning the Earth.  
+The Internet is the global system of interconnected computer networks that uses the internet protocol suite (TCP/IP) to communicate between networks and devices.  
+It is a network of networks that consists of private, public, academic, business, and government networks of local to global scope, linked by a broad array of electronic, wireless, and optical networking technologies.  
+**Internet Protocol Suite (TCP/IP):** is a suite of protocols that are ordered into a set of four conceptional layer by the scope of their operation. At the top is the **application layer** (DNS. HTTP. HTTPS. IMAP. SSH. Telnet. TLS/SSL. more...). Below this top layer, the **transport layer** connects application on different hosts with a logical channel through the network. It provides this service with a variety of possible characteristics, such as **TCP** and **UDP**. Underlying these layer are networking that interconnect networks at their border and exchange traffic across them. The **Internet layer** implement **Internet Protocol (IP)** which enables computers to identify and locate each other by **IP address** and route their traffic via intermediate (transit) networks. At the bottom of the architecture is the **link layer**, which connects nodes on the same physical link, and contains protocols that do not require routers for traversal to other links.
+
+**IP addresses**
+IP addresses are used by the Internet infrastructure to direct internet packets to thier destinations. They consist of fixed-length numbers, which are found within the packets. IP addresses are generally assigned to equipment either automatically via DHCP, or are configured. However, the network also supports other addressing systems. Users generally enter domain names instead of IP addresses, they are converted by the Domain Name System (DNS) into IP addresses which are more efficient for routing purposes.  
+Two versions of Internet Protocol exist, IPv4 and IPv6 whose difference is mainly due to number of assignable IP's possible.
+
 ## Tasks
 | File | Descriptions |
 |------|--------------|
