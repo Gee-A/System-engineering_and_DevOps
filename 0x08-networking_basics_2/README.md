@@ -37,3 +37,6 @@ Some browsers (e.g., Google Chrome) tends to ignore the hosts file unless one of
 ## Tasks
 | File | Description |
 |------|-------------|
+[0-change_your_home_IP](./0-change_your_home_IP) | configures an Ubuntu server by resolving the localhost to 127.0.0.2, and facebook.com to 8.8.8.8
+[1-show_attached_IPs](./1-show_attached_IPs) | displays all active IPv4 IPs on the machine it's executed on
+[100-port_listening_on_localhost](./100-port_listening_on_localhost) | listen on port 98 on localhost
