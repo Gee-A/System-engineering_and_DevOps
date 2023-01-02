@@ -6,7 +6,6 @@
 [IP address](https://www.bleepingcomputer.com/tutorials/ip-addresses-explained/)  
 [TCP and UDP](https://www.howtogeek.com/190014/htg-explains-what-is-the-difference-between-tcp-and-udp/)
 
-
 **Note**  
 The **Open Systems Interconnection model (OSI model)** is a conceptual model that provides a common basis for the coordination of [ISO] standards development for the purpose of systems interconnection.
 
@@ -78,6 +77,11 @@ Two versions of Internet Protocol exist, IPv4 and IPv6 whose difference is mainl
 localhost is a hostname that refers to the current device used to access it. It is used to access the network services that are running on the host via the loopback network interface.  
 The name localhost normally resolves to the IPv4 loopback address *127.0.0.1* and to the IPv6 loopback address ::1.  
 the processing of any packet sent to a loopback address is implemented in the **link layer** of the TCP/IP stack. Such packets are never passed to any network interface controller (NIC) or hardware device driver and must not appear outside of a computing system or be routed by any router. This permits software testing and local services in the absence of any hardware network interface.
+
+**Internet Protocol (IP) port**
+Port numbers are associated with TCP/IP network connections and might be described as an add-on to the IP address. They allow different application on the same computer to share network resources simultaneously.
+In both TCP and UDP, port numbers start at 0 and go up to 65535. The lower ranges are dedicated to common internet protocol such as (21->FTP, 22->SSH, 25->SMTP, 80->HTTP).
+**Note:** IP + port = socket.
 
 ## Tasks
 | Task | File | Descriptions |
