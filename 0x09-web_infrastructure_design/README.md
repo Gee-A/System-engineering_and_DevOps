@@ -5,8 +5,8 @@
 [Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)  
 [scale DNS with round-robin DNS](https://www.dnsknowledge.com/whatis/round-robin-dns/)  
 [How DNS works - Cartoon](https://howdns.works/ep6/)  
-[Load-balancing](https://www.thegeekstuff.com/2016/01/load-balancer-intro/)
-[What is a database](https://www.oracle.com/ke/database/what-is-database/)
+[Load-balancing](https://www.thegeekstuff.com/2016/01/load-balancer-intro/)  
+[What is a database](https://www.oracle.com/ke/database/what-is-database/)  
 [Firewall](https://www.webopedia.com/definitions/firewall/)
 
 
