@@ -2,28 +2,22 @@
 ``DevOps`` ``SysAdmin`` ``web infrastructure``
 
 **Resource**
-[Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)
-[scale DNS with round-robin DNS](https://www.dnsknowledge.com/whatis/round-robin-dns/)
-[How DNS works - Cartoon](https://howdns.works/ep6/)
+[Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)  
+[scale DNS with round-robin DNS](https://www.dnsknowledge.com/whatis/round-robin-dns/)  
+[How DNS works - Cartoon](https://howdns.works/ep6/)  
 
 
 **Note**
 **Server:**  is a piece of computer hardware or software (computer program) that provides functionality (called services) for other programs or devices, called _clients_. Servers are located in datacenters which are building that host hundreds, or even thousands of computers.
 Typical servers are database servers, file servers, mail servers, web servers, proxy servers, game servers, and application servers.
 
-Application Server: Hosts web apps (computer programs that run inside a web browser) allowing users in the network to run and use them, without having to install a copy on their own computers.
-
-Database Server: Maintains and shares any form of database (organized collection of data with predefined properties that may be displayed in a table) over a network.
-
-File Server: Shares file and folders, storage space to hold files and folder, or both over a network.
-
-Game Server: Enables several computers or gaming devices to play multiplayer video games.
-
-Mail Server: Makes email communication possible in the same way that a post office makes [snail mail](https://en.wikipedia.org/wiki/Mail) communication possible.
-
-Proxy Server: Acts as an intermediary between a client and a server, accepting incoming traffic from the client and sending it to the server. Reasons for doing so include content control and filtering, improving traffic performance, preventing unauthorized network access or simply routing the traffic over a large and complex network.
-
-Web Server: Hosts and serves web pages. A web server is what makes the World Wide Web possible. World Wide Web commonly known as the **Web**, is an information system enabling documents and other web resources to be accessed over the internet).
+* Application Server: Hosts web apps (computer programs that run inside a web browser) allowing users in the network to run and use them, without having to install a copy on their own computers.
+* Database Server: Maintains and shares any form of database (organized collection of data with predefined properties that may be displayed in a table) over a network.
+* File Server: Shares file and folders, storage space to hold files and folder, or both over a network.
+* Game Server: Enables several computers or gaming devices to play multiplayer video games.
+* Mail Server: Makes email communication possible in the same way that a post office makes [snail mail](https://en.wikipedia.org/wiki/Mail) communication possible.
+* Proxy Server: Acts as an intermediary between a client and a server, accepting incoming traffic from the client and sending it to the server. Reasons for doing so include content control and filtering, improving traffic performance, preventing unauthorized network access or simply routing the traffic over a large and complex network.
+* Web Server: Hosts and serves web pages. A web server is what makes the World Wide Web possible. World Wide Web commonly known as the **Web**, is an information system enabling documents and other web resources to be accessed over the internet).
 
 
 **Web Server**  
@@ -39,18 +33,18 @@ A **dynamic web server** consists of a static web server plus extra software, mo
 **DNS**  
 DNS, simply is the technology that translate human-adapted, text-based domain names to machine-adapted, numerical-based IP.  
 **DNS record types**  
-A: An A (address) record maps a domain name to the _IPv4_ address of the computer hosting the domain. A domain can have many _A_ records, (e.g., example.com could have an A record for www.example.com -> 127.0.0.1, and another for mail.example.com -> 127.0.0.2)  
+* A: An A (address) record maps a domain name to the _IPv4_ address of the computer hosting the domain. A domain can have many _A_ records, (e.g., example.com could have an A record for www.example.com -> 127.0.0.1, and another for mail.example.com -> 127.0.0.2)  
 AAAA record is the _IPv6_ version of _A_ record.  
 **You can use ``dig A www.example.com`` to determine the *A* record associated to a domain name**  
-CName: A Canonical Name (CNAME) record maps one domain name (an alias) to another (the canonical name). This can prove convenient when running multiple services (like FTP server and web server, each running on different ports) from a single IP address. One can, for example, use CNAME records to point ftp.example.com and www.example.com to the DNS entry for example.com, which in turn has an A record which points to the IP address. Then, if the IP address ever changes, one only has to record the change in one place within the network - in the DNS A record for example.com.
+* CNAME: A Canonical Name (CNAME) record maps one domain name (an alias) to another (the canonical name). This can prove convenient when running multiple services (like FTP server and web server, each running on different ports) from a single IP address. One can, for example, use CNAME records to point ftp.example.com and www.example.com to the DNS entry for example.com, which in turn has an A record which points to the IP address. Then, if the IP address ever changes, one only has to record the change in one place within the network - in the DNS A record for example.com.
 ```
 Name			Type	Value
 bar.example.com		CNAME	foo.example.com
 foo.example.com		A	192.0.2.23
 ```
 **bar.example.com** is the alias name for the canonical Name, **foo.example.com**  
-MX: A mail exchanger record specifies the mail server responsible for accepting email messages on behalf of a domain name. [Overview](https://en.wikipedia.org/wiki/MX_record#overview)
-TXT: A text record provide the ability to associate arbitrary text with a host or other name, such as human readable information about a server, network, data center, or other accounting information.
+* MX: A mail exchanger record specifies the mail server responsible for accepting email messages on behalf of a domain name. [Overview](https://en.wikipedia.org/wiki/MX_record#overview)  
+* TXT: A text record provide the ability to associate arbitrary text with a host or other name, such as human readable information about a server, network, data center, or other accounting information.
 
 **The root domain and sub domain - differences**
 A root domain is the parent domain to a sub domain, and its name is not, and can not be divided by a dot.  
