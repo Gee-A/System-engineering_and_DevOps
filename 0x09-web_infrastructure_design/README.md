@@ -5,6 +5,7 @@
 [Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)  
 [scale DNS with round-robin DNS](https://www.dnsknowledge.com/whatis/round-robin-dns/)  
 [How DNS works - Cartoon](https://howdns.works/ep6/)  
+[Load-balancing](https://www.thegeekstuff.com/2016/01/load-balancer-intro/)
 
 
 **Note**
@@ -53,7 +54,38 @@ The dot in the domain name delimits the domain name (This means that the address
 
 
 **Load balancer**  
+Load balancing is the process of distributing a set of tasts over a set of resources (computing units), with the aim of making their overall processing more efficient and reliable.
+
+**Advantages of load balancing your application**
+* Reduce work-load on an individual server
+* Increase performance because of faster response
+* No **SPOF** (single point of failure): If a server crashes the application will be served by other servers in the cluster.
+* Scalability: We can increase or decrease the number of servers on the fly without bringing down the application.
+* Increased security as the physical servers and IP's are abstract in certain cases.
+
+**Software Load Balancer Example**
+* HAProxy - A TCP load balancer
+* NGINX - A HTTP load balancer with SSL termination support
+* mod athena - Apache based HTTP load balancer
+* Varnish - A reverse proxy based load balancer
+* Balance - Open source TCP load balancer
+
+**DNS load balancing:** In DNS based load balancing method, the domain name servers are configured to return different IP address for different systems. This approach creates a load balancing effect whenever there is a dns lookup  
+[**Load Balancing algorithm**](https://community.f5.com/t5/technical-articles/intro-to-load-balancing-for-developers-ndash-the-algorithms/ta-p/273759)
+
+
 **Monitoring**  
+software monitoring watches computer metrics, record them, and emit an alert if something is unusual or that could make the computer not work properly happens.  
+Web stack monitoring can be broken down into 2 categories:
+* Application monitoring: getting data about your running software and making sure it behave as expected.
+* Server monitoring: getting data about your virtual or physical server and making sure they are not overloaded (could be CPU, memory, disk or network overload).
+
+**Some monitoring tools**
+* NewRelic
+* DataDog
+* Uptime Robot
+* Nagios
+* WaveFront
 
 
 ## Tasks
