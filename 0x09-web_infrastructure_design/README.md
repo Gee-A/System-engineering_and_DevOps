@@ -1,11 +1,13 @@
 # 0x09. Web Infrastructure design
 ``DevOps`` ``SysAdmin`` ``web infrastructure``
 
-**Resource**
+**Resource**  
 [Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)  
 [scale DNS with round-robin DNS](https://www.dnsknowledge.com/whatis/round-robin-dns/)  
 [How DNS works - Cartoon](https://howdns.works/ep6/)  
 [Load-balancing](https://www.thegeekstuff.com/2016/01/load-balancer-intro/)
+[What is a database](https://www.oracle.com/ke/database/what-is-database/)
+[Firewall](https://www.webopedia.com/definitions/firewall/)
 
 
 **Note**
@@ -29,6 +31,9 @@ Web server can refer to hardware of software, or both working together.
 To publish a website, you need either a static or a dynamic web server.  
 A **static web server**, or stack, consists of a computer (hardware) with an HTTP server (software) that sends its hosted files as-is to your browser.  
 A **dynamic web server** consists of a static web server plus extra software, most commonly an application server and a database to process and updates the hosted files before sending content to your browser via the HTTP server.
+
+While Web server exclusively handles HTTP requests, an application server serves business logic to application programs through any number of protocols. The application program can use this logic as it would call a method on an object (or a function in the procedural world).  
+Such application server clients can include GUIs running on a PC, a Web server, or other application servers. The information traveling back and forth between an application server and its client is notrestricted to simple display markup. Instead, the information is program logic. Since the logic takes the form of data and method calls and not static HTML, the client can employ the exporsed business logic however it wants.
 
 
 **DNS**  
@@ -80,12 +85,18 @@ Web stack monitoring can be broken down into 2 categories:
 * Application monitoring: getting data about your running software and making sure it behave as expected.
 * Server monitoring: getting data about your virtual or physical server and making sure they are not overloaded (could be CPU, memory, disk or network overload).
 
-**Some monitoring tools**
-* NewRelic
-* DataDog
-* Uptime Robot
-* Nagios
-* WaveFront
+**Some monitoring tools:** NewRelic, DataDog, Uptime Robot, Nagios,  WaveFront
+
+
+**Miscellaneous**  
+**Single Point of Failure (SPOF):** is any non-redundant part of a system that, if dysfunctional, would cause the entire system to fail.  
+It is essentially a flaw in the design, configuration, or implementation of a system, circuit, or component that poses a potential risk because it could lead to a situation in which just one malfunction or fault causes the whole system to stop working.
+
+[**How to avoid downtime when deploying new code**](https://softwareengineering.stackexchange.com/questions/35063/how-do-you-update-your-production-codebase-database-schema-without-causing-downt#answers-header)
+
+[**High availability cluster (active-active/active-passive)**](https://docs.oracle.com/cd/E17904_01/core.1111/e10106/intro.htm#ASHIA714)
+
+[**HTTP VS HTTPS**](https://www.instantssl.com/http-vs-https)
 
 
 ## Tasks
