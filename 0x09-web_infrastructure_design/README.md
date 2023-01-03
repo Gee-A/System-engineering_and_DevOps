@@ -10,7 +10,7 @@
 [Firewall](https://www.webopedia.com/definitions/firewall/)
 
 
-**Note**
+**Note**<br />
 **Server:**  is a piece of computer hardware or software (computer program) that provides functionality (called services) for other programs or devices, called _clients_. Servers are located in datacenters which are building that host hundreds, or even thousands of computers.
 Typical servers are database servers, file servers, mail servers, web servers, proxy servers, game servers, and application servers.
 
